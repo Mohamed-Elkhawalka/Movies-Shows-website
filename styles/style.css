@@ -1,0 +1,103 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0F0F0F;
+}
+:root {
+    --main-color-Black12: #1F1F1F;
+    --main-color-red45: #E50000;
+    --main-color-Black15: #262626;
+    --main-color-Grey60: #999999;
+    --main-color-AbsoluteWhite: #FFFFFF;
+    --main-color-Black6: #0F0F0F;
+    --main-color-Black10: #1A1A1A;
+    --main-color-Grey75: #BFBFBF;
+}
+nav {
+    left: -1;
+    z-index: 1;
+    
+    button {
+        background-color: var(--main-color-Black10);
+        border: 1px solid var(--main-color-Black10);
+        padding: 14px 24px;
+        gap: 10px;
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+        a {
+            color: var(--main-color-Grey75);
+            font-size: 18px;
+            letter-spacing: 0;
+    }
+    .ButtonsContainer1 {
+        gap: 30px;
+    }
+    button {
+        border: 3px solid var(--main-color-Black15);
+        background-color: var(--main-color-Black10);
+        padding: 12px;
+        gap: 10px;
+        border-radius: 6px;
+    }
+}
+.custom-nav-padding {
+    padding: 30px 162px;
+}
+.ButtonsContainer {
+    gap: 30px;
+    border: 4px solid var(--main-color-Black12);
+    padding: 10px 40px 10px 10px;
+    background-color: var(--main-color-Black6);
+}
+.imagecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+        
+    img {
+        width: 195.56px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+.subcontainer1 {
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        display: flex;
+        background-color: var(--main-color-red45);
+    }
+}
+@media (max-width: 1439px) {
+    .custom-nav-padding {
+        padding: 24px 80px;
+    }
+    .ButtonsContainer {
+    gap: 16px;
+    padding: 8px 30px 8px 8px;
+    }
+    .logo {
+        width: 165.83px;
+        height: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .custom-nav-padding {
+        padding: 40px 16px 14px 16px;
+    }
+    .logo {
+        width: 116.08px;
+        height: 35px;
+    }
+}   

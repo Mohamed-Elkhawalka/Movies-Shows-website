@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
-body {
-    background-color: #0F0F0F;
-}
 :root {
-    --main-color-Black12: #1F1F1F;
-    --main-color-red45: #E50000;
-    --main-color-Black15: #262626;
-    --main-color-Grey60: #999999;
-    --main-color-AbsoluteWhite: #FFFFFF;
     --main-color-Black6: #0F0F0F;
+    --main-color-Black8: #141414;
     --main-color-Black10: #1A1A1A;
+    --main-color-Black12: #1F1F1F;
+    --main-color-Black15: #262626;
+    --main-color-red45: #E50000;
+    --main-color-Grey60: #999999;
     --main-color-Grey75: #BFBFBF;
+    --main-color-AbsoluteWhite: #FFFFFF;
+}
+body {
+    background-color: var(--main-color-Black8);
 }
 nav {
     left: -1;
     z-index: 1;
     
     button {
+        font-family: 'Manrope', sans-serif;
         background-color: var(--main-color-Black10);
         border: 1px solid var(--main-color-Black10);
         padding: 14px 24px;
@@ -29,6 +33,7 @@ nav {
         letter-spacing: 0;
     }
         a {
+            font-family: 'Manrope', sans-serif;
             color: var(--main-color-Grey75);
             font-size: 18px;
             letter-spacing: 0;
@@ -67,16 +72,57 @@ nav {
     }
 }
 .subcontainer1 {
+    gap: 50px;
 
     .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
+        p {
+            font-family: 'Manrope', sans-serif;
+            font-size: 58px;
+            letter-spacing: 0%;
+            color: var(--main-color-AbsoluteWhite);
+        }
+        p:nth-child(2) {
+            font-size: 18px;
+            color: var(--main-color-Grey60);
+        }
     }
     button {
-        display: flex;
+        width: fit-content;
+        border: 0px;
         background-color: var(--main-color-red45);
+        color: var(--main-color-AbsoluteWhite);
+        font-family: 'Manrope', sans-serif;
+        font-size: 18px;
+        letter-spacing: 0%;
+        padding: 14px 28px;
+    }
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+
+    .subcontainer2{
+        display: flex;
+
+        .text-container1{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            p{
+                font-family: 'Manrope', sans-serif;
+                font-size: 38px;
+                letter-spacing: 0%;
+                color: var(--main-color-AbsoluteWhite);
+            }
+            p:nth-child(2) {
+                font-size: 18px;
+                color: var(--main-color-Grey60);
+            }
+        }
     }
 }
 @media (max-width: 1439px) {

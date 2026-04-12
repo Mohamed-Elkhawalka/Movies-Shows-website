@@ -11,6 +11,7 @@
     --main-color-Black10: #1A1A1A;
     --main-color-Black12: #1F1F1F;
     --main-color-Black15: #262626;
+    --main-color-Black20: #333333;
     --main-color-red45: #E50000;
     --main-color-Grey60: #999999;
     --main-color-Grey75: #BFBFBF;
@@ -63,6 +64,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
+    
         
     img {
         width: 195.56px;
@@ -101,13 +103,17 @@ nav {
 .container2 {
     display: flex;
     flex-direction: column;
-    gap: 80px;
     justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 200px;
+    margin-bottom: 150px;
 
     .subcontainer2{
         display: flex;
-
-        .text-container1{
+        gap: 100px;
+        
+        .text-container1 {
             display: flex;
             flex-direction: column;
             gap: 14px;
@@ -121,6 +127,65 @@ nav {
             p:nth-child(2) {
                 font-size: 18px;
                 color: var(--main-color-Grey60);
+            }
+        }
+        .ButtonsContainer2 {
+            height: fit-content;
+            display: flex;
+            border: 1px solid var(--main-color-Black12);
+            border-radius: 12px;
+            padding: 16px;
+            background-color: var(--main-color-Black6);
+            gap: 16px;
+            align-items: center;
+
+            button {
+                background-color: var(--main-color-Black10);
+                border-radius: 8px;
+                padding: 14px;
+                border: 1px solid var(--main-color-Black12);
+                gap: 10px;
+            }
+            .IndicatorsContainer {
+                display: flex;
+                gap: 3px;
+                width: 81px;
+                height: 4px;
+
+                .shap {
+                    background-color: var(--main-color-Black20);
+                    border-radius: 100px;
+                    width: 16.33px;
+                }
+                .shap:nth-child(1) {
+                    width: 23px;
+                    background-color: var(--main-color-red45);
+                }
+            }
+        }
+    }
+    .subcontainer3 {
+        gap: 30px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--main-color-Black10);
+            border: 1px solid var(--main-color-Black15);
+            border-radius: 12px;
+            padding: 30px;
+
+            .imagecontainer {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                gap: 5px;
+
+                img {
+                    width: 115.2px;
+                    height: 123.5px;
+                    border-radius: 10px;
+                }
             }
         }
     }

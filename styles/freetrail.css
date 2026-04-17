@@ -162,6 +162,9 @@ body {
         height: 158.25px;
       }
     }
+    .textcontainer {
+      text-align: center;
+    }
   }
 }
 @media (max-width: 391px) {
@@ -170,7 +173,6 @@ body {
     gap: 50px;
 
     .textcontainer {
-      text-align: center;
       font-size: 24px;
 
       p:nth-child(2) {

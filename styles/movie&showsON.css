@@ -587,6 +587,7 @@ nav {
     transition: ease-out 0.8s;
     border: 2px solid var(--main-color-red45);
     border-radius: 10px;
+    background-color: rgba(20, 20, 20, 0.4);
     box-shadow: inset 0 0 0 0 var(--main-color-red45);
     font-family: "Manrope", sans-serif;
     font-weight: 600;
@@ -692,12 +693,16 @@ nav {
     justify-content: center;
 
     .imagecontainer {
+      left: auto;
       width: 1395px;
       height: 693px;
 
       img {
         height: 158.25px;
       }
+    }
+    .textcontainer {
+      text-align: center;
     }
   }
 }
@@ -723,7 +728,6 @@ nav {
     gap: 50px;
 
     .textcontainer {
-      text-align: center;
       font-size: 24px;
 
       p:nth-child(2) {
